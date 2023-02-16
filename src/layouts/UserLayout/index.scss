@@ -1,0 +1,16 @@
+.user-layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.user-layout__main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.user-layout__content {
+  background-color: #fbfbfb;
+  overflow: auto;
+  padding: 40px 30px 40px;
+}
