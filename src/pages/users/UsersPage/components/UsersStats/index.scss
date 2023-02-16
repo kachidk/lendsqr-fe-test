@@ -1,0 +1,65 @@
+.users-page__stats-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.users-page__stats {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  height: 160px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 18px 20px;
+}
+
+.users-page__stats__icon-container {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 999px;
+}
+
+.users-page__stats__icon-container--color-pink {
+  background-color: rgba(red(#df18ff), green(#df18ff), blue(#df18ff), 0.1);
+  color: #df18ff;
+}
+
+.users-page__stats__icon-container--color-purple {
+  background-color: rgba(red(#5718ff), green(#5718ff), blue(#5718ff), 0.1);
+  color: #5718ff;
+}
+
+.users-page__stats__icon-container--color-orange {
+  background-color: rgba(red(#f55f44), green(#f55f44), blue(#f55f44), 0.1);
+  color: #f55f44;
+}
+
+.users-page__stats__icon-container--color-red {
+  background-color: rgba(red(#ff3366), green(#ff3366), blue(#ff3366), 0.1);
+  color: #ff3366;
+}
+
+.users-page__stats__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.users-page__stats__header {
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.users-page__stats__number {
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 10px;
+}

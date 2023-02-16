@@ -1,0 +1,126 @@
+.users-page__users-pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.users-page__users-pagination__per-page {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.users-page__users-pagination__per-page__select {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba($primary, 0.125);
+  color: $primary;
+}
+
+.users-page__users-pagination__per-page__text {
+  font-size: 13px;
+}
+
+.users-page__users-pagination__buttons {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 250px;
+}
+
+.users-page__users-pagination__buttons__center-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.users-page__users-pagination__buttons__center {
+  display: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:nth-last-child(1) {
+    display: flex;
+  }
+
+  &:nth-last-child(2) {
+    display: flex;
+  }
+
+  &:nth-last-child(2)::before {
+    content: "...";
+    margin-right: 15px;
+  }
+
+  &:nth-child(1) {
+    display: flex;
+  }
+
+  &:nth-child(1)::before {
+    display: none;
+  }
+
+  &:nth-child(2) {
+    display: flex;
+  }
+}
+
+.users-page__users-pagination__buttons__center--active {
+  color: rgba($primary, 0.8);
+}
+
+.users-page__users-pagination__buttons__prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba($primary, 0.125);
+  color: rgba($primary, 0.8);
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.users-page__users-pagination__buttons__next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgba($primary, 0.125);
+  color: rgba($primary, 0.8);
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
